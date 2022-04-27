@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/e3c89534d9.js" crossorigin="anonymous"></script>
+    <title>Home | EMD Seguros</title>
+</head>
+
+<body>
+    <header>
+        <!--Inicio de navbar-->
+        <nav class="navbar fixed-top navbar-expand-md bg-light navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/logo.svg" alt="" width="35" height="29" class="d-inline-block align-text-top">
+                    EMD Seguros
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Fin de navbar-->
+    </header>
+
+    <main>
+        <!--Inicio de HERO-->
+        <section class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse justify-content-center align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="./images/portada.svg" class="d-block mx-lg-auto img-fluid" alt="Imagen de portada"
+                        width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">Protege lo que <br>más te importa</h1>
+                    <p class="lead">En <mark>EMD Seguros</mark> trabajamos junto a productores y compañias de seguros,
+                        para brindarte la mejor experiencia.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <a href="#introNosotros" class="btn btn-primary btn-lg px-4 me-md-2">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Fin de HERO-->
+
+        <!--Inicio de Nosotros-->
+        <section class="container my-3" id="introNosotros">
+            <div class="row row-cols-md-1 row-cols-lg-2 align-items-center">
+                <div class="col">
+                    <img src="./images/nosotros.jpg" class="img-fluid img-thumbnail img-nosotros" alt="" loading="lazy">
+                </div>
+                <div class="col text-center p-4">
+                    <h2 class="mb-3">Conocenos!</h2>
+                    <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sed accusamus earum
+                        id ullam quod facere tempore inventore, veniam consequatur non atque provident, velit sequi unde
+                        reiciendis quam nostrum suscipit!Neque nostrum hic aspernatur suscipit ea libero esse voluptate,
+                        laudantium accusantium officia id rem eveniet magnam mollitia, est numquam.</p>
+                    <a href="./pages/nosotros.html" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+        </section>
+        <!--Fin de Nosotros-->
+
+        <!--Inicio de Productos-->
+        <section class="container my-5">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>Nuestros Productos</h2>
+                </div>
+            </div>
+            <div class="row row-cols-sm-1 row-cols-lg-2">
+                <div class="col p-3 my-3">
+                    <div class="introProductos__card introProductos__card--persona">
+                        <div class="introProductos__card__textos">
+                            <h3 class="introProductos__card__textos-titulo">Personas</h3>
+                            <p class="introProductos__card__textos-parrafo">Amplias coberturas para tus bienes, tu actividad/profesión y lo más importante tu vida y la de tus seres amados.</p>
+                        </div>
+                        <div class="introProductos__card__enlace">
+                            <a href="./pages/productos.html">Ver más ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3 my-3">
+                    <div class="introProductos__card introProductos__card--empresa">
+                        <div class="introProductos__card__textos">
+                            <h3 class="introProductos__card__textos-titulo">Empresas</h3>
+                            <p class="introProductos__card__textos-parrafo">Cobertura integral para las PyMEs, institutos o cualquier otro tipo de organización.</p>
+                        </div>
+                        <div class="introProductos__card__enlace">
+                            <a href="./pages/productos.html">Ver más ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Fin de Productos-->
+
+        <!--Inicio de Servicios-->
+        <section class="container my-5">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>Nuestros Servicios</h2>
+                </div>
+            </div>
+            <div class="row row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 p-3 my-3 g-3">
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/Asesorar bajo.jpg" alt="Card image">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Asesoramiento Integral</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis ipsam autem.</p>
+                            <a href="./pages/servicios.html" class="btn btn-link encima">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/seguimientoCob.jpg" alt="Card image">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Seguimiento de Coberturas</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis ipsam autem.</p>
+                            <a href="./pages/servicios.html" class="btn btn-link encima">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/Atención permanente bajo.jpg" alt="Card image">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Atención Permanente</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis ipsam autem.</p>
+                            <a href="./pages/servicios.html" class="btn btn-link encima">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/Gestión de reclamo 2.jpg" alt="Card image">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Gestión de Reclamos</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis ipsam autem.</p>
+                            <a href="./pages/servicios.html" class="btn btn-link encima">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--Fin de Servicios-->
+    </main>
+
+    <footer class="bg-light">
+        <!--Inicio de footer-->
+        <div class="container">
+            <div class="row row-cols-4 py-5 mt-5 border-top">
+                <div class="col">
+                    <a href="https://www.facebook.com/" class="d-inline-flex m-1 mb-3 link-dark text-decoration-none rrss encima" title="facebook" target="_blank">
+                            <i class="contacto__rrss-icono fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" class="d-inline-flex m-1 link-dark text-decoration-none rrss encima" title="instagram" target="_blank">
+                        <i class="contacto__rrss-icono fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.twitter.com" class="d-inline-flex m-1 link-dark text-decoration-none rrss encima" title="twitter" target="_blank">
+                        <i class="contacto__rrss-icono fa-brands fa-twitter"></i>
+                    </a>
+                    <p class="text-muted">&copy; 2021</p>
+                </div>
+                <div class="col"></div>
+                <div class="col">
+                    <h5>Secciones</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 encima">Inicio</a></li>
+                        <li class="nav-item mb-2"><a href="./pages/productos.html" class="nav-link p-0 encima">Productos</a></li>
+                        <li class="nav-item mb-2"><a href="./pages/servicios.html" class="nav-link p-0 encima">Servicios</a></li>
+                        <li class="nav-item mb-2"><a href="./pages/nosotros.html" class="nav-link p-0 encima">Nosotros</a></li>
+                        <li class="nav-item mb-2"><a href="./pages/contacto.html" class="nav-link p-0 encima">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Links Útiles</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="http://servicios.infoleg.gob.ar/infolegInternet/anexos/35000-39999/39520/norma.htm" class="nav-link p-0 encima" target="_blank">Ley de Seguros</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.argentina.gob.ar/superintendencia-de-seguros" class="nav-link p-0 encima" target="_blank">SSN | Superintendencia de Seguros</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Fin de footer-->
+    </footer>
+
+
+    <!--Scripts de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+</body>
+</html>
