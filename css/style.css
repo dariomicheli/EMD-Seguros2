@@ -49,6 +49,10 @@ body {
           transform: scale(1.03, 1.03);
 }
 
+.introProductos__card:hover .introProductos__card__textos-parrafo, .introProductos__card:hover .introProductos__card__textos-titulo, .introProductos__card:hover .introProductos__card__enlace a {
+  display: inline-block;
+}
+
 .introProductos__card__textos-titulo {
   margin: 5px;
   text-transform: uppercase;
@@ -84,10 +88,6 @@ body {
 .introProductos__card--empresa:hover {
   background-image: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0.8))), url(../images/empresa.jpg);
   background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0.8)), url(../images/empresa.jpg);
-}
-
-.introProductos__card:hover .introProductos__card__textos-parrafo, .introProductos__card:hover .introProductos__card__textos-titulo, .introProductos__card:hover .introProductos__card__enlace a {
-  display: inline-block;
 }
 
 .card {

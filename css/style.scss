@@ -39,6 +39,9 @@ body{
 
     &:hover{
         transform: scale(1.03,1.03);
+        .introProductos__card__textos-parrafo, .introProductos__card__textos-titulo, .introProductos__card__enlace a{
+            display: inline-block;
+        }
     }
 }
 
@@ -75,10 +78,6 @@ body{
     &:hover{
         background-image: linear-gradient(to right,rgba(255,255,255,1),rgba(255,255,255,.8)),url(../images/empresa.jpg);
     }
-}
-
-.introProductos__card:hover .introProductos__card__textos-parrafo, .introProductos__card:hover .introProductos__card__textos-titulo, .introProductos__card:hover .introProductos__card__enlace a{
-    display: inline-block;   
 }
 
 .card{
