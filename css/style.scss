@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    padding-top: 56px;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #fcfcfc;
+}
+
+.img-nosotros{
+    min-width: 400px;
+}
+
+.introProductos__card{
+    min-width: 300px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+    overflow: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .5s;
+}
+
+.introProductos__card__textos-titulo{
+    margin: 5px;
+    text-transform: uppercase;
+    display: none;
+}
+
+.introProductos__card__textos-parrafo{
+    margin: 10px 0;
+    display: none;
+}
+
+.introProductos__card__enlace a{
+    color: #d64933;
+    text-decoration: underline;
+    display: none;
+}
+
+.introProductos__card--persona{
+    grid-area: introProductos__card--persona;
+    background-image: url(../images/personas.jpg);
+}
+
+.introProductos__card--empresa{
+    grid-area: introProductos__card--empresa;
+    background-image: url(../images/empresa.jpg);
+}
+
+.introProductos__card:hover .introProductos__card__textos-parrafo, .introProductos__card:hover .introProductos__card__textos-titulo, .introProductos__card:hover .introProductos__card__enlace a{
+    display: inline-block;   
+}
+
+.introProductos__card:hover {
+    transform: scale(1.03,1.03);
+}
+
+.introProductos__card--empresa:hover{
+    background-image: linear-gradient(to right,rgba(255,255,255,1),rgba(255,255,255,.8)),url(../images/empresa.jpg);
+}
+
+.introProductos__card--persona:hover{
+    background-image: linear-gradient(to right,rgba(255,255,255,1),rgba(255,255,255,.8)),url(../images/personas.jpg);
+}
+
+.card{
+    width: 230px;
+    height: 400px;
+}
+
+.rrss{
+    font-size: 24px;
+}
+
+.encima{
+    color: #0b132b;
+}
+
+.encima:hover{
+    color: #d64933;
+}
+
+footer .nav-link{
+    color: rgb(108, 117, 125);
+}
+
+/*---------------Servicios-----------------*/
+
+.imgServicio{
+    min-width: 300px;
+    min-height: 250px;
+}
+
+/*---------------Contacto-----------------*/
+
+.mapa{
+    min-height: 300px;
+}
