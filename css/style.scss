@@ -1,3 +1,7 @@
+$colorPrincipal: #d64933;
+$colorFondo: #fcfcfc;
+$colorSecundario:#0b132b;
+
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +14,7 @@ html{
 }
 
 body{
-    background-color: #fcfcfc;
+    background-color: $colorFondo;
 }
 
 .img-nosotros{
@@ -32,6 +36,10 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     transition: all .5s;
+
+    &:hover{
+        transform: scale(1.03,1.03);
+    }
 }
 
 .introProductos__card__textos-titulo{
@@ -45,36 +53,32 @@ body{
     display: none;
 }
 
-.introProductos__card__enlace a{
-    color: #d64933;
-    text-decoration: underline;
-    display: none;
+.introProductos__card__enlace{
+    a{
+        color: $colorPrincipal;
+        text-decoration: underline;
+        display: none;
+    }
 }
 
 .introProductos__card--persona{
     grid-area: introProductos__card--persona;
     background-image: url(../images/personas.jpg);
+    &:hover{
+        background-image: linear-gradient(to right,rgba(255,255,255,1),rgba(255,255,255,.8)),url(../images/personas.jpg);
+    }
 }
 
 .introProductos__card--empresa{
     grid-area: introProductos__card--empresa;
     background-image: url(../images/empresa.jpg);
+    &:hover{
+        background-image: linear-gradient(to right,rgba(255,255,255,1),rgba(255,255,255,.8)),url(../images/empresa.jpg);
+    }
 }
 
 .introProductos__card:hover .introProductos__card__textos-parrafo, .introProductos__card:hover .introProductos__card__textos-titulo, .introProductos__card:hover .introProductos__card__enlace a{
     display: inline-block;   
-}
-
-.introProductos__card:hover {
-    transform: scale(1.03,1.03);
-}
-
-.introProductos__card--empresa:hover{
-    background-image: linear-gradient(to right,rgba(255,255,255,1),rgba(255,255,255,.8)),url(../images/empresa.jpg);
-}
-
-.introProductos__card--persona:hover{
-    background-image: linear-gradient(to right,rgba(255,255,255,1),rgba(255,255,255,.8)),url(../images/personas.jpg);
 }
 
 .card{
@@ -87,26 +91,22 @@ body{
 }
 
 .encima{
-    color: #0b132b;
+    color: $colorSecundario;
+    &:hover{
+        color: $colorPrincipal;
+    }
 }
 
-.encima:hover{
-    color: #d64933;
-}
-
-footer .nav-link{
-    color: rgb(108, 117, 125);
-}
+footer{
+    .nav-link{
+        color: rgb(108, 117, 125);
+    }
+} 
 
 /*---------------Servicios-----------------*/
 
-.imgServicio{
-    min-width: 300px;
-    min-height: 250px;
-}
+@import "_servicios.scss";
 
 /*---------------Contacto-----------------*/
 
-.mapa{
-    min-height: 300px;
-}
+@import "_contacto.scss";

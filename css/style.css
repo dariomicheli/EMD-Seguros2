@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -20,18 +21,32 @@ body {
 .introProductos__card {
   min-width: 300px;
   height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 30px;
   text-align: center;
   overflow: auto;
   border-radius: 8px;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  transition: all 0.5s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.introProductos__card:hover {
+  -webkit-transform: scale(1.03, 1.03);
+          transform: scale(1.03, 1.03);
 }
 
 .introProductos__card__textos-titulo {
@@ -56,25 +71,23 @@ body {
   background-image: url(../images/personas.jpg);
 }
 
+.introProductos__card--persona:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0.8))), url(../images/personas.jpg);
+  background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0.8)), url(../images/personas.jpg);
+}
+
 .introProductos__card--empresa {
   grid-area: introProductos__card--empresa;
   background-image: url(../images/empresa.jpg);
 }
 
+.introProductos__card--empresa:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0.8))), url(../images/empresa.jpg);
+  background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0.8)), url(../images/empresa.jpg);
+}
+
 .introProductos__card:hover .introProductos__card__textos-parrafo, .introProductos__card:hover .introProductos__card__textos-titulo, .introProductos__card:hover .introProductos__card__enlace a {
   display: inline-block;
-}
-
-.introProductos__card:hover {
-  transform: scale(1.03, 1.03);
-}
-
-.introProductos__card--empresa:hover {
-  background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0.8)), url(../images/empresa.jpg);
-}
-
-.introProductos__card--persona:hover {
-  background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0.8)), url(../images/personas.jpg);
 }
 
 .card {
@@ -95,7 +108,7 @@ body {
 }
 
 footer .nav-link {
-  color: rgb(108, 117, 125);
+  color: #6c757d;
 }
 
 /*---------------Servicios-----------------*/
@@ -108,5 +121,4 @@ footer .nav-link {
 .mapa {
   min-height: 300px;
 }
-
 /*# sourceMappingURL=style.css.map */
