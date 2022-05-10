@@ -65,7 +65,6 @@ body{
 }
 
 .introProductos__card--persona{
-    grid-area: introProductos__card--persona;
     background-image: url(../images/personas.jpg);
     &:hover{
         background-image: linear-gradient(to right,rgba(255,255,255,1),rgba(255,255,255,.8)),url(../images/personas.jpg);
@@ -73,7 +72,6 @@ body{
 }
 
 .introProductos__card--empresa{
-    grid-area: introProductos__card--empresa;
     background-image: url(../images/empresa.jpg);
     &:hover{
         background-image: linear-gradient(to right,rgba(255,255,255,1),rgba(255,255,255,.8)),url(../images/empresa.jpg);
