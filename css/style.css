@@ -1,8 +1,10 @@
+/*Ejemplo de uso de maps*/
+/*Ejemplo de uso de mixin*/
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -26,17 +28,17 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 30px;
   text-align: center;
   overflow: auto;
   border-radius: 8px;
   -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -46,28 +48,34 @@ body {
 
 .introProductos__card:hover {
   -webkit-transform: scale(1.03, 1.03);
-          transform: scale(1.03, 1.03);
+  transform: scale(1.03, 1.03);
 }
 
-.introProductos__card:hover .introProductos__card__textos-parrafo, .introProductos__card:hover .introProductos__card__textos-titulo, .introProductos__card:hover .introProductos__card__enlace a {
+.introProductos__card:hover .introProductos__card__textos-parrafo,
+.introProductos__card:hover .introProductos__card__textos-titulo,
+.introProductos__card:hover .introProductos__card__enlace a {
   display: inline-block;
+}
+
+/*Ejemplo de uso de extend*/
+.introProductos__card__textos-titulo,
+.introProductos__card__textos-parrafo,
+.introProductos__card__enlace a {
+  display: none;
 }
 
 .introProductos__card__textos-titulo {
   margin: 5px;
   text-transform: uppercase;
-  display: none;
 }
 
 .introProductos__card__textos-parrafo {
   margin: 10px 0;
-  display: none;
 }
 
 .introProductos__card__enlace a {
   color: #d64933;
   text-decoration: underline;
-  display: none;
 }
 
 .introProductos__card--persona {
@@ -89,8 +97,8 @@ body {
 }
 
 .card {
-  width: 230px;
   height: 400px;
+  width: 230px;
 }
 
 .rrss {
@@ -119,4 +127,5 @@ footer .nav-link {
 .mapa {
   min-height: 300px;
 }
+
 /*# sourceMappingURL=style.css.map */

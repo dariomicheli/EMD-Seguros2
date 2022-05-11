@@ -1,6 +1,11 @@
-$colorPrincipal: #d64933;
-$colorFondo: #fcfcfc;
-$colorSecundario:#0b132b;
+/*Ejemplo de uso de maps*/
+$colores: ("principal": #d64933, "secundario": #0b132b, "fondo":#fcfcfc);
+
+/*Ejemplo de uso de mixin*/
+@mixin dimension($height,$width){
+    height:$height;
+    width:$width;
+}
 
 *{
     margin: 0;
@@ -14,7 +19,7 @@ html{
 }
 
 body{
-    background-color: $colorFondo;
+    background-color: map-get($colores, "fondo");
 }
 
 .img-nosotros{
@@ -45,22 +50,27 @@ body{
     }
 }
 
-.introProductos__card__textos-titulo{
-    margin: 5px;
-    text-transform: uppercase;
+/*Ejemplo de uso de extend*/
+%nomuestra{
     display: none;
 }
 
+.introProductos__card__textos-titulo{
+    @extend %nomuestra;
+    margin: 5px;
+    text-transform: uppercase;
+}
+
 .introProductos__card__textos-parrafo{
+    @extend %nomuestra;
     margin: 10px 0;
-    display: none;
 }
 
 .introProductos__card__enlace{
     a{
-        color: $colorPrincipal;
+        @extend %nomuestra;
+        color: map-get($colores, "principal");
         text-decoration: underline;
-        display: none;
     }
 }
 
@@ -79,8 +89,7 @@ body{
 }
 
 .card{
-    width: 230px;
-    height: 400px;
+    @include dimension(400px,230px);
 }
 
 .rrss{
@@ -88,9 +97,9 @@ body{
 }
 
 .encima{
-    color: $colorSecundario;
+    color: map-get($colores, "secundario");
     &:hover{
-        color: $colorPrincipal;
+        color: map-get($colores, "principal");
     }
 }
 
