@@ -1,5 +1,6 @@
 /*Ejemplo de uso de maps*/
 $colores: ("principal": #d64933, "secundario": #0b132b, "fondo":#fcfcfc);
+$blanco:#fff;
 
 /*Ejemplo de uso de mixin*/
 @mixin dimension($height,$width){
@@ -97,13 +98,13 @@ body{
 }
 
 .encima{
-    color: map-get($colores, "secundario");
     &:hover{
-        color: map-get($colores, "principal");
+        color: $blanco;
     }
 }
 
 footer{
+    background-color: map-get($colores, "secundario") ;
     .nav-link{
         color: rgb(108, 117, 125);
     }
