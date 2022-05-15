@@ -93,6 +93,10 @@ body {
   width: auto;
 }
 
+.card h3 {
+  font-size: 20px;
+}
+
 .rrss {
   font-size: 24px;
 }
@@ -166,7 +170,7 @@ footer .nav-link {
 }
 
 .subrayado {
-  border-top: 2px solid black;
+  border-top: 1px solid black;
   width: 30px;
   margin: 0 auto 10px auto;
 }

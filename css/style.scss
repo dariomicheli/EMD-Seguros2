@@ -87,6 +87,9 @@ body{
 
 .card{
     @include dimension(auto,auto);
+    h3{
+        font-size: 20px;
+    }
 }
 
 .rrss{
