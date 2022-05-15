@@ -190,17 +190,6 @@ footer .nav-link {
   text-align: center;
 }
 
-.encabezado img {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.05);
-  margin: 10px 10px;
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
 .encabezado i {
   font-size: 50px;
   margin: 20px 10px;
@@ -212,23 +201,13 @@ footer .nav-link {
   margin-top: 15px;
 }
 
-.encabezado a {
-  position: relative;
-  display: block;
-}
-
-.encabezado a:hover img {
-  -webkit-box-shadow: 0 0 0 12px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 0 12px rgba(0, 0, 0, 0.1);
-}
-
 .descripcion {
   width: 60%;
-  padding: 15px;
+  padding: 10px 8px;
   background-color: #fbfbfb;
   text-align: center;
   position: relative;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .descripcion p {
