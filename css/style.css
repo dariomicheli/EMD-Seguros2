@@ -160,7 +160,7 @@ footer .nav-link {
           justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #5684c9;
+  /* background-color: #5684c9; */
 }
 
 .contenedorProducto {
@@ -186,7 +186,7 @@ footer .nav-link {
 .encabezado {
   /* border-right: 1px solid #ddd; */
   width: 40%;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -201,19 +201,25 @@ footer .nav-link {
   transition: .2s;
 }
 
+.encabezado i {
+  font-size: 50px;
+  margin: 20px 10px;
+  color: #d64933;
+}
+
 .encabezado h2 {
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 15px;
 }
 
 .encabezado a {
   position: relative;
   display: block;
-  /*  &:hover{
-            img{
-                box-shadow: 0 0 0 12px rgba(0,0,0,.1);
-            }
-        } */
+}
+
+.encabezado a:hover img {
+  -webkit-box-shadow: 0 0 0 12px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 0 12px rgba(0, 0, 0, 0.1);
 }
 
 .descripcion {

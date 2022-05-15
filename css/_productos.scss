@@ -26,7 +26,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    background-color: #5684c9;
+    /* background-color: #5684c9; */
 }
 
 .contenedorProducto{
@@ -46,7 +46,7 @@
 .encabezado{
     /* border-right: 1px solid #ddd; */
     width: 40%;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     img{
         width: 70px;
@@ -56,18 +56,23 @@
         margin: 10px 10px;
         transition: .2s;
     }
+    i{
+        font-size: 50px;
+        margin: 20px 10px;
+        color: #d64933;
+    }
     h2{
-        font-size: 20px;
+        font-size: 18px;
         margin-top: 15px;
     }
     a{
         position: relative;
         display: block;
-       /*  &:hover{
+        &:hover{
             img{
                 box-shadow: 0 0 0 12px rgba(0,0,0,.1);
             }
-        } */
+        }
     }
 }
 
