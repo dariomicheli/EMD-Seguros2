@@ -23,12 +23,8 @@ body{
     background-color: map-get($colores, "fondo");
 }
 
-.img-nosotros{
-    min-width: 400px;
-}
-
 .introProductos__card{
-    min-width: 300px;
+    /* min-width: 300px; */
     height: 450px;
     display: flex;
     flex-direction: column;
@@ -90,7 +86,7 @@ body{
 }
 
 .card{
-    @include dimension(400px,230px);
+    @include dimension(auto,auto);
 }
 
 .rrss{
@@ -122,3 +118,10 @@ footer{
 /*---------------Productos-----------------*/
 
 @import "_productos.scss";
+
+
+@media (max-width:576px){
+    .introProductos__card{
+        height: 300px;
+    }
+}
