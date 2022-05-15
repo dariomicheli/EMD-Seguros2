@@ -1,8 +1,38 @@
 .descripcionServicio{
-    padding: 0px 50px;
+    p{
+        margin: 20px 0px 30px 0px;
+        padding: 0 40px;
+    }
+    h2{
+        font-size: 30px;
+    }
 }
 
-.imgServicio{
-    min-width: 300px;
-    min-height: 250px;
+@media screen and (max-width:1200px){
+    .descripcionServicio{
+        p{
+            padding: 0px;
+            margin: 10px 0px;
+        } 
+    }
 }
+
+@media (max-width:996px){
+    .descripcionServicio{
+        p{
+            margin: 20px 0px 30px 0px;
+            padding: 0 40px;
+        }
+    }    
+}
+
+@media (max-width:768px){
+    .descripcionServicio{
+        p{
+            padding: 0;
+        }
+    }
+    
+}
+
+
