@@ -2,6 +2,19 @@
 $colores: ("principal": #d64933, "secundario": #0b132b, "fondo":#fcfcfc);
 $blanco:#fff;
 
+
+//Paleta de Colores
+$color1:#003559;
+$color2:#fe5f55;
+$color3:#0d5c63;
+$color4:#fbfffe;
+$color5:#ffffff;
+
+//Fuente
+$fuente:'Poppins', sans-serif;
+
+
+
 /*Ejemplo de uso de mixin*/
 @mixin dimension($height,$width){
     height:$height;
@@ -12,6 +25,7 @@ $blanco:#fff;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 html{
@@ -20,7 +34,23 @@ html{
 }
 
 body{
-    background-color: map-get($colores, "fondo");
+    background-color:$color4;
+    font-family: $fuente;
+}
+
+.subrayado{ 
+    border-top: 1px solid $color2;
+    width: 30px;
+    margin: 0 auto 10px auto;
+}
+
+.boton{
+    background-color: $color2;
+    border-color: $color2;
+    &:hover{
+        background-color: $color3;
+        border-color: $color3;
+    }
 }
 
 .introProductos__card{
@@ -66,8 +96,11 @@ body{
 .introProductos__card__enlace{
     a{
         @extend %nomuestra;
-        color: map-get($colores, "principal");
+        color: $color2;
         text-decoration: underline;
+        &:hover{
+            color: $color3;
+        }
     }
 }
 
@@ -88,7 +121,11 @@ body{
 .card{
     @include dimension(auto,auto);
     h3{
-        font-size: 20px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    p{
+        font-size: 14px;
     }
 }
 
@@ -108,10 +145,27 @@ body{
 }
 
 .encima{
+    color: $color4;
+    font-weight: 200;
     &:hover{
-        color: $blanco;
+        color: $color2;
+        font-weight: 300;
     }
 }
+
+.btn-link{
+    color: $color2;
+    text-decoration: none;
+    &:hover{
+        color: $color3;
+    }
+}
+
+/* footer{
+    a{
+        color: $color3;
+    }
+} */
 
 .seguros{
     a{
@@ -133,10 +187,7 @@ body{
 }
 
 footer{
-    background-color: map-get($colores, "secundario") ;
-    .nav-link{
-        color: rgb(108, 117, 125);
-    }
+    background-color: $color1;
 } 
 
 /*---------------Servicios-----------------*/

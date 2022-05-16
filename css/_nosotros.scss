@@ -1,3 +1,16 @@
 .bg-valores{
-    background-color: #fff;
+    background-color: $color5;
+}
+
+.iconoColor{
+    color: $color3;
+}
+
+.textoJustificado{
+    text-align: justify;
+}
+
+.textoNosotros::first-letter{
+    color: $color2;
+    font-size: 25px;
 }
