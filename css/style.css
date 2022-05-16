@@ -23,6 +23,10 @@ body {
   margin: 0 auto 10px auto;
 }
 
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
+  color: #fe5f55;
+}
+
 .boton {
   background-color: #fe5f55;
   border-color: #fe5f55;

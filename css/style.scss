@@ -44,6 +44,10 @@ body{
     margin: 0 auto 10px auto;
 }
 
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: $color2;
+}
+
 .boton{
     background-color: $color2;
     border-color: $color2;
