@@ -92,6 +92,17 @@ body{
     }
 }
 
+.cardServicio{
+    border-radius: 10px;
+    transition: .3s;
+    img{
+        border-radius: 10px;
+    }
+    &:hover{
+        transform: translateY(-15px);
+    }
+}
+
 .rrss{
     font-size: 24px;
 }

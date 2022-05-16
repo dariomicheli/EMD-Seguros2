@@ -97,6 +97,21 @@ body {
   font-size: 20px;
 }
 
+.cardServicio {
+  border-radius: 10px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.cardServicio img {
+  border-radius: 10px;
+}
+
+.cardServicio:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+
 .rrss {
   font-size: 24px;
 }
