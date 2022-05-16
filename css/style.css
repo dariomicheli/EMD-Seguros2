@@ -13,7 +13,24 @@ html {
 }
 
 body {
-  background-color: #fcfcfc;
+  background-color: #fbfffe;
+  font-family: "Poppins", sans-serif;
+}
+
+.subrayado {
+  border-top: 1px solid #fe5f55;
+  width: 30px;
+  margin: 0 auto 10px auto;
+}
+
+.boton {
+  background-color: #fe5f55;
+  border-color: #fe5f55;
+}
+
+.boton:hover {
+  background-color: #0d5c63;
+  border-color: #0d5c63;
 }
 
 .introProductos__card {
@@ -66,8 +83,12 @@ body {
 }
 
 .introProductos__card__enlace a {
-  color: #d64933;
+  color: #fe5f55;
   text-decoration: underline;
+}
+
+.introProductos__card__enlace a:hover {
+  color: #0d5c63;
 }
 
 .introProductos__card--persona {
@@ -94,7 +115,12 @@ body {
 }
 
 .card h3 {
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 14px;
 }
 
 .cardServicio {
@@ -116,10 +142,30 @@ body {
   font-size: 24px;
 }
 
-.encima:hover {
-  color: #fff;
+.encima {
+  color: #fbfffe;
+  font-weight: 200;
 }
 
+.encima:hover {
+  color: #fe5f55;
+  font-weight: 300;
+}
+
+.btn-link {
+  color: #fe5f55;
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  color: #0d5c63;
+}
+
+/* footer{
+    a{
+        color: $color3;
+    }
+} */
 .seguros a {
   display: inline-block;
   max-width: 180px;
@@ -143,11 +189,7 @@ body {
 }
 
 footer {
-  background-color: #0b132b;
-}
-
-footer .nav-link {
-  color: #6c757d;
+  background-color: #003559;
 }
 
 /*---------------Servicios-----------------*/
@@ -189,10 +231,20 @@ textarea {
   height: 150px;
 }
 
+.linkRedes {
+  color: #fe5f55;
+  font-size: 18px;
+}
+
+.linkRedes:hover {
+  color: #0d5c63;
+}
+
 /*---------------Productos-----------------*/
 .container-fluid {
   padding: 10px;
-  background-color: lightsalmon;
+  background-image: -webkit-gradient(linear, left top, right top, from(#003559), color-stop(#004e6a), color-stop(#1d6675), color-stop(#427f7f), to(#689689));
+  background-image: linear-gradient(to right, #003559, #004e6a, #1d6675, #427f7f, #689689);
 }
 
 .tituloPrincipal {
@@ -203,17 +255,20 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #fbfffe;
 }
 
 .enlaces a {
   text-decoration: none;
-  color: black;
+  color: #fbfffe;
 }
 
-.subrayado {
-  border-top: 1px solid black;
-  width: 30px;
-  margin: 0 auto 10px auto;
+.enlaces a:hover {
+  color: #fe5f55;
+}
+
+.enlaces span {
+  color: #fbfffe;
 }
 
 .contenedorProductos {
@@ -235,7 +290,7 @@ textarea {
   width: 360px;
   height: auto;
   margin: 15px 0px;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 2px;
   -webkit-box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.2);
@@ -258,11 +313,11 @@ textarea {
 .encabezado i {
   font-size: 50px;
   margin: 20px 10px;
-  color: #d64933;
+  color: #0d5c63;
 }
 
 .encabezado h2 {
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 15px;
 }
 
@@ -272,7 +327,7 @@ textarea {
   background-color: #fbfbfb;
   text-align: center;
   position: relative;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .descripcion p {
@@ -280,11 +335,12 @@ textarea {
 }
 
 .descripcion a {
+  color: #fe5f55;
   text-decoration: none;
 }
 
 .descripcion a:hover {
-  color: #d64933;
+  color: #0d5c63;
 }
 
 @media screen and (max-width: 1200px) {
@@ -310,7 +366,20 @@ textarea {
 
 /*---------------Nosotros-----------------*/
 .bg-valores {
-  background-color: #fff;
+  background-color: #ffffff;
+}
+
+.iconoColor {
+  color: #0d5c63;
+}
+
+.textoJustificado {
+  text-align: justify;
+}
+
+.textoNosotros::first-letter {
+  color: #fe5f55;
+  font-size: 25px;
 }
 
 @media (max-width: 576px) {

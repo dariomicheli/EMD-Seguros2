@@ -3,5 +3,13 @@
 }
 
 textarea{
-        height: 150px;
+    height: 150px;
+}
+
+.linkRedes{
+    color: $color2;
+    font-size: 18px;
+    &:hover{
+        color: $color3;
     }
+}
