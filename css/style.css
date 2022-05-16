@@ -148,6 +148,10 @@ footer .nav-link {
   min-height: 300px;
 }
 
+textarea {
+  height: 150px;
+}
+
 /*---------------Productos-----------------*/
 .container-fluid {
   padding: 10px;
@@ -265,6 +269,11 @@ footer .nav-link {
   h2 {
     font-size: 15px;
   }
+}
+
+/*---------------Nosotros-----------------*/
+.bg-valores {
+  background-color: #fff;
 }
 
 @media (max-width: 576px) {
