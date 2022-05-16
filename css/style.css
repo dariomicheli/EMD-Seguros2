@@ -80,6 +80,7 @@ body {
 
 .introProductos__card__textos-parrafo {
   margin: 10px 0;
+  font-size: 16px;
 }
 
 .introProductos__card__enlace a {
@@ -115,12 +116,12 @@ body {
 }
 
 .card h3 {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 600;
 }
 
 .card p {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .cardServicio {
@@ -233,7 +234,7 @@ textarea {
 
 .linkRedes {
   color: #fe5f55;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .linkRedes:hover {
@@ -317,7 +318,7 @@ textarea {
 }
 
 .encabezado h2 {
-  font-size: 16px;
+  font-size: 15px;
   margin-top: 15px;
 }
 
@@ -380,6 +381,21 @@ textarea {
 .textoNosotros::first-letter {
   color: #fe5f55;
   font-size: 25px;
+}
+
+.nros {
+  color: #fbfffe;
+  border-radius: 10px;
+  background-image: radial-gradient(circle at 47.39% 79.86%, #ff7b5f 0, #ff6e5a 25%, #fe5f55 50%, #f64f50 75%, #ef3f4d 100%);
+}
+
+.nros p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.nros h5 {
+  font-size: 20px;
 }
 
 @media (max-width: 576px) {
