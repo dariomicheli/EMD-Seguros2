@@ -370,8 +370,12 @@ textarea {
 }
 
 /*---------------Nosotros-----------------*/
-.bg-valores {
+.bg-valor {
   background-color: #ffffff;
+}
+
+.bg-valor h5 {
+  font-size: 1em;
 }
 
 .iconoColor {
