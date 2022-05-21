@@ -3,6 +3,13 @@
     h5{
         font-size: 1em;
     }
+    i{
+        transition: all .8s;
+    }
+    &:hover i{
+        
+        transform: rotate(360deg);
+    }
 }
 
 .iconoColor{
